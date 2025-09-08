@@ -90,9 +90,9 @@ Create Environment File:
 Create a new file named .env inside the backend folder.
 
 Open the .env file and add the following line to run the full analysis:
-
+```
 DEV_MODE=False
-
+```
 Run the Backend Server:
 
 ```
