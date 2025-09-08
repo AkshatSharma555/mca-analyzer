@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: mca-analyzer-backend
+    env: python
+    rootDir: backend
+    plan: free
+    region: singapore
+    
+    # YEH HAI SABSE ZAROORI HISSA
+    # Yeh build shuru hone se pehle chalega
+    preBuildCommand: "apt-get update && apt-get install -y gfortran libblas-dev liblapack-dev"
+    
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn run:app"
+    
+    envVars:
+      - key: DEV_MODE
+        value: False
