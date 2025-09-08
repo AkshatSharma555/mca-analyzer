@@ -1,23 +1,15 @@
 services:
-  # Service Details
   - type: web
     name: mca-analyzer-backend
     env: python
     rootDir: backend
-    plan: free # Note: free instances may be slow for AI models
+    plan: free
     region: singapore
-
-    # Build Configuration (Corrected)
-    build:
-      # This command runs before the main build command
-      pre: "apt-get update && apt-get install -y gfortran libblas-dev liblapack-dev"
-      # This is the main build command
-      command: "pip install -r requirements.txt"
-
-    # Start Command
+  
+    buildCommand: "apt-get update && apt-get install -y gfortran libblas-dev liblapack-dev && pip install -r requirements.txt"
+    
     startCommand: "gunicorn run:app"
     
-    # Environment Variables
     envVars:
       - key: DEV_MODE
         value: False
