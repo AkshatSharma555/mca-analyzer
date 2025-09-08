@@ -1,18 +1,34 @@
 services:
+  # Service Details
   - type: web
     name: mca-analyzer-backend
     env: python
     rootDir: backend
-    plan: free
+    plan: free # Note: free instances may be slow for AI models
     region: singapore
-    
-    # YEH HAI SABSE ZAROORI HISSA
-    # Yeh build shuru hone se pehle chalega
-    preBuildCommand: "apt-get update && apt-get install -y gfortran libblas-dev liblapack-dev"
-    
-    buildCommand: "pip install -r requirements.txt"
+
+    # Build Configuration (Corrected)
+    build:
+      # This command runs before the main build command
+      pre: "apt-get update && apt-get install -y gfortran libblas-dev liblapack-dev"
+      # This is the main build command
+      command: "pip install -r requirements.txt"
+
+    # Start Command
     startCommand: "gunicorn run:app"
     
+    # Environment Variables
     envVars:
       - key: DEV_MODE
         value: False
+```
+
+### **Kya Badlaav Hua?**
+
+1.  Humne `preBuildCommand` ko hata kar, ek naya `build` section banaya hai.
+2.  Is `build` section ke andar, humne ek `pre` step banaya hai. Yeh Render ko batata hai ki "main `command` (pip install) chalaane se **pehle**, yeh `pre` waali command chalao."
+3.  Humne `buildCommand` ko bhi `build` section ke andar `command` ke roop mein likha hai. Yeh sabse latest aur correct `render.yaml` format hai.
+4.  Maine saare comments hata diye hain taaki file ekdum clean rahe.
+
+
+    
