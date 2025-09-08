@@ -21,14 +21,3 @@ services:
     envVars:
       - key: DEV_MODE
         value: False
-```
-
-### **Kya Badlaav Hua?**
-
-1.  Humne `preBuildCommand` ko hata kar, ek naya `build` section banaya hai.
-2.  Is `build` section ke andar, humne ek `pre` step banaya hai. Yeh Render ko batata hai ki "main `command` (pip install) chalaane se **pehle**, yeh `pre` waali command chalao."
-3.  Humne `buildCommand` ko bhi `build` section ke andar `command` ke roop mein likha hai. Yeh sabse latest aur correct `render.yaml` format hai.
-4.  Maine saare comments hata diye hain taaki file ekdum clean rahe.
-
-
-    
