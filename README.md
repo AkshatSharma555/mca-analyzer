@@ -1,57 +1,57 @@
-MCA e-Consultation Analysis Tool 🇮🇳
-An AI-powered web application designed to analyze public feedback on draft legislations for the Ministry of Corporate Affairs (MoCA). This tool provides deep, actionable insights from thousands of comments, saving countless hours of manual work and enabling data-driven policy making.
+# MCA e-Consultation Analysis Tool 🇮🇳
 
-✨ Key Features
-This tool goes beyond simple analysis and provides a multi-layered intelligence report:
+An **AI-powered web application** designed to analyze public feedback on draft legislations for the **Ministry of Corporate Affairs (MoCA)**.  
+This tool provides deep, actionable insights from thousands of comments—saving countless hours of manual work and enabling **data-driven policymaking**.
 
-🧠 Advanced Sentiment Analysis
-Overall Sentiment: Get a high-level overview (Positive vs. Negative %) of the public mood.
+---
 
-Aspect-Based Sentiment: Understand sentiment for specific topics like "Cost" or "Timeline".
+## ✨ Key Features
 
-Emotion Analysis: Uncover the emotions (Anger, Fear, Joy) behind the comments for deeper context.
+This tool goes beyond simple analysis and provides a **multi-layered intelligence report**:
 
-Contradiction Detector: Automatically finds high-value comments with mixed opinions.
+### 🧠 Advanced Sentiment Analysis
+- **Overall Sentiment:** High-level overview (Positive vs. Negative %) of the public mood.  
+- **Aspect-Based Sentiment:** Sentiment breakdown for specific topics like *Cost* or *Timeline*.  
+- **Emotion Analysis:** Detect emotions (Anger, Fear, Joy) for deeper context.  
+- **Contradiction Detector:** Finds high-value comments with mixed or conflicting opinions.  
 
-📄 Intelligent Summarization
-Executive Summary: An AI-generated summary of the entire feedback.
+### 📄 Intelligent Summarization
+- **Executive Summary:** AI-generated overview of the entire feedback.  
+- **Thematic Summaries:** Summaries for each identified topic.  
+- **Notable Summaries:** Auto-summaries for the most detailed comments.  
 
-Thematic Summaries: Get summaries for each specific topic identified in the comments.
+### 📊 Interactive Visualizations
+- **Dynamic Word Clouds:** Sentiment-based keyword exploration.  
+- **Insight Graph:** Node-based visualization of relationships between *Stakeholders, Topics, and Sentiments*.  
+- **Stakeholder Analysis:** Identifies patterns from groups like *Business Owners*, *Lawyers*, etc.  
 
-Notable Summaries: Auto-summaries for the longest, most detailed comments.
+### 💻 Modern UI/UX
+- Clean, professional interface inspired by government portals.  
+- Full **Light & Dark Mode** support.  
+- **One-click PDF report generation** for any analysis tab.  
 
-📊 Interactive Visualizations
-Dynamic Word Clouds: Explore keywords with sentiment-based color coding (Overall, Positive, Negative views).
+---
 
-Insight Graph: A unique node-based graph that visualizes the complex relationships between Stakeholders, Topics, and their Sentiments.
+## 🛠️ Tech Stack
 
-Stakeholder Analysis: Identifies feedback patterns from different groups like 'Business Owners', 'Lawyers', etc.
+**Frontend:** React, Vite, Tailwind CSS, Recharts, React Flow, Framer Motion  
+**Backend:** Python, Flask  
+**AI/ML:** Hugging Face Transformers, NLTK  
 
-💻 Modern UI/UX
-Clean, professional interface inspired by official government portals.
+---
 
-Full Light & Dark Mode support.
+## 🚀 Getting Started (Windows)
 
-One-click PDF report generation for any analysis tab.
+Follow these steps to set up and run the project locally:
 
-🛠️ Tech Stack
-Frontend: React, Vite, Tailwind CSS, Recharts, React Flow, Framer Motion
+### ✅ Prerequisites
+Make sure you have the following installed:
+- [Node.js](https://nodejs.org/) (v18 or higher)  
+- [Python](https://www.python.org/) (v3.9 or higher)  
+- [Git](https://git-scm.com/)  
 
-Backend: Python, Flask
+---
 
-AI/ML: Hugging Face Transformers, NLTK
-
-🚀 Getting Started (for Windows)
-Follow these instructions to set up and run the project on your local machine.
-
-Prerequisites
-Make sure you have the following software installed:
-
-Node.js (v18 or higher)
-
-Python (v3.9 or higher)
-
-Git
 
 Installation & Setup
 Important: You will need two separate terminals (like Command Prompt or PowerShell) open at the same time: one for the Backend and one for the Frontend.
